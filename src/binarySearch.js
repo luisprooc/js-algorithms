@@ -1,4 +1,4 @@
-import  arrayGenerator  from "../generators/index.js";
+import arrayGenerator  from "../generators/arrayGenerator.js";
 
 const binarySearch = (arr, target) => {
 
@@ -14,4 +14,4 @@ const binarySearch = (arr, target) => {
 
 
 
-console.log(binarySearch( arrayGenerator(),3 ));
+console.log(binarySearch( arrayGenerator(400),3 ));
