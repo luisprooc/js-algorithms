@@ -1,3 +1,3 @@
-const intGenerator = (n) => Math.floor(n * Math.random());
+const intGenerator = (n) => Math.ceil(n * Math.random());
 
 export default intGenerator;
