@@ -4,8 +4,21 @@
  */
 
 const diffArray = (arr1, arr2) => {
-    var newArr = [];
-    return newArr;
+  let newArr = [];
+
+  for(let i of arr1){
+
+    if(!arr2.includes(i)) newArr.push(i);
+
+  }
+
+  for(let i of arr2){
+
+    if(!arr1.includes(i)) newArr.push(i);
+
+  }
+
+  return newArr;
 }
   
-  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+console.log(diffArray([1, "calf", 3, "piglet"], [1, "calf", 3, 4]));
