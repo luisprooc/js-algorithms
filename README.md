@@ -176,3 +176,47 @@ destroyer(["tree", "hamburger", 53], "tree", 53) should return ["hamburger"].
 
 destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", "hotdog", "grandma", "bugati", "trojan") should return [12,92,65].
 ```
+
+
+## Make a Person
+
+Fill in the object constructor with the following methods below:
+
+```javascript
+
+getFirstName()
+getLastName()
+getFullName()
+setFirstName(first)
+setLastName(last)
+setFullName(firstAndLast)
+```
+
+```javascript
+
+Object.keys(bob).length should return 6.
+
+bob instanceof Person should return true.
+
+bob.firstName should return undefined.
+
+bob.lastName should return undefined.
+
+bob.getFirstName() should return the string Bob.
+
+bob.getLastName() should return the string Ross.
+
+bob.getFullName() should return the string Bob Ross.
+
+bob.getFullName() should return the string Haskell Ross after bob.setFirstName("Haskell").
+
+bob.getFullName() should return the string Haskell Curry after bob.setLastName("Curry").
+
+bob.getFullName() should return the string Haskell Curry after bob.setFullName("Haskell Curry").
+
+bob.getFirstName() should return the string Haskell after bob.setFullName("Haskell Curry").
+
+bob.getLastName() should return the string Curry after bob.setFullName("Haskell Curry").
+```
+
+
