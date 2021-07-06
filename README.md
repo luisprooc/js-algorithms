@@ -371,7 +371,6 @@ chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 2) should return [[0, 1], [2, 3]
 ```
 
 
-<<<<<<< HEAD
 ## Pig Latin
 
 Pig Latin is a way of altering English Words. The rules are as follows:
@@ -396,7 +395,9 @@ translatePigLatin("eight") should return the string eightway.
 Should handle words where the first vowel comes in the middle of the word. translatePigLatin("schwartz") should return the string artzschway.
 
 Should handle words without vowels. translatePigLatin("rhythm") should return the string rhythmay.
-=======
+```
+
+
 ## Square List
 
 Complete the code for the squareList function using any combination of map(), filter(), and reduce(). The function should return a new array containing the squares of only the positive integers (decimal numbers are not integers) when an array of real numbers is passed to it. An example of an array of real numbers is [-3, 4.8, 5, 3, -3.2].
@@ -415,6 +416,69 @@ The function should return an array.
 squareList([4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]) should return [16, 1764, 36].
 
 squareList([-3.7, -5, 3, 10, 12.5, 7, -4.5, -17, 0.3]) should return [9, 100, 49].
->>>>>>> 1dfba9a6070beff3188a2b09ec3f320fe4dccf55
+
+```
+
+
+## Restrict Possible Usernames
+
+You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating their username.
+
+* Usernames can only use alpha-numeric characters.
+
+* The only numbers in the username have to be at the end. There can be zero or more of them at the end. Username cannot start with the number.
+
+* Username letters can be lowercase and uppercase.
+
+* Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
+
+```javascript
+Your regex should match the string JACK
+
+Your regex should not match the string J
+
+Your regex should match the string Jo
+
+Your regex should match the string Oceans11
+
+Your regex should match the string RegexGuru
+
+Your regex should not match the string 007
+
+Your regex should not match the string 9
+
+Your regex should not match the string A1
+
+Your regex should not match the string BadUs3rnam3
+
+Your regex should match the string Z97
+
+Your regex should not match the string c57bT3
+
+Your regex should match the string AB1
+
+Your regex should not match the string J%4
+
+```
+
+
+## DNA Pairing
+
+The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.
+
+Base pairs are a pair of AT and CG. Match the missing element to the provided character.
+
+Return the provided character as the first element in each array.
+
+For example, for the input GCG, return [["G", "C"], ["C","G"], ["G", "C"]]
+
+The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
+
+```javascript
+pairElement("ATCGA") should return [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]].
+
+pairElement("TTGAG") should return [["T","A"],["T","A"],["G","C"],["A","T"],["G","C"]].
+
+pairElement("CTCTA") should return [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]].
 
 ```
