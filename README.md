@@ -568,7 +568,7 @@ binaryAgent("01001001 00100000 01101100 01101111 01110110 01100101 00100000 0100
 ```
 
 
-## Wherefore art thouPassed
+## Wherefore Art Thou
 
 Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
 
@@ -586,5 +586,29 @@ whatIsInAName([{ "apple": 1, "bat": 2 }, { "apple": 1 }, { "apple": 1, "bat": 2,
 whatIsInAName([{ "apple": 1, "bat": 2 }, { "apple": 1 }, { "apple": 1, "bat": 2, "cookie": 2 }, { "bat":2 }], { "apple": 1, "bat": 2 }) should return [{ "apple": 1, "bat": 2 }, { "apple": 1, "bat": 2, "cookie":2 }].
 
 whatIsInAName([{"a": 1, "b": 2, "c": 3}], {"a": 1, "b": 9999, "c": 3}) should return []
+
+```
+
+
+## Sum All Odd Fibonacci Numbers
+
+Given a positive integer num, return the sum of all odd Fibonacci numbers that are less than or equal to num.
+
+The first two numbers in the Fibonacci sequence are 1 and 1. Every additional number in the sequence is the sum of the two previous numbers. The first six numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8.
+
+For example, sumFibs(10) should return 10 because all odd Fibonacci numbers less than or equal to 10 are 1, 1, 3, and 5.
+
+```javascript
+sumFibs(1) should return a number.
+
+sumFibs(1000) should return 1785.
+
+sumFibs(4000000) should return 4613732.
+
+sumFibs(4) should return 5.
+
+sumFibs(75024) should return 60696.
+
+sumFibs(75025) should return 135721.
 
 ```
