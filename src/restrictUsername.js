@@ -1,5 +1,5 @@
 const restrictUsername = (username) => {
-    const userCheck = /^[a-z]*[a-z].[0-9]?$/gi;
+    const userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
     return userCheck.test(username);
 }
 
