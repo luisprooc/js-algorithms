@@ -786,3 +786,71 @@ orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]) should return [{name: "
 orbitalPeriod([{name: "iss", avgAlt: 413.6}, {name: "hubble", avgAlt: 556.7}, {name: "moon", avgAlt: 378632.553}]) should return [{name : "iss", orbitalPeriod: 5557}, {name: "hubble", orbitalPeriod: 5734}, {name: "moon", orbitalPeriod: 2377399}].
 
 ```
+
+
+## Caesars Cipher
+
+One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.
+
+A common modern use is the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus A ↔ N, B ↔ O and so on.
+
+Write a function which takes a ROT13 encoded string as input and returns a decoded string.
+
+All letters will be uppercase. Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do pass them on.
+
+
+
+```javascript
+rot13("SERR PBQR PNZC") should decode to the string FREE CODE CAMP
+
+rot13("SERR CVMMN!") should decode to the string FREE PIZZA!
+
+rot13("SERR YBIR?") should decode to the string FREE LOVE?
+
+rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.") should decode to the string THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+
+```
+
+
+## Palindrome Checker
+
+Return true if the given string is a palindrome. Otherwise, return false.
+
+A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+
+Note: You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.
+
+We'll pass strings with varying formats, such as racecar, RaceCar, and race CAR among others.
+
+We'll also pass strings with special symbols, such as 2A3*3a2, 2A3 3a2, and 2_A3*3#A2.
+
+
+
+```javascript
+palindrome("eye") should return a boolean.
+
+palindrome("eye") should return true.
+
+palindrome("_eye") should return true.
+
+palindrome("race car") should return true.
+
+palindrome("not a palindrome") should return false.
+
+palindrome("A man, a plan, a canal. Panama") should return true.
+
+palindrome("never odd or even") should return true.
+
+palindrome("nope") should return false.
+
+palindrome("almostomla") should return false.
+
+palindrome("My age is 0, 0 si ega ym.") should return true.
+
+palindrome("1 eye for of 1 eye.") should return false.
+
+palindrome("0_0 (: /-\ :) 0-0") should return true.
+
+palindrome("five|\_/|four") should return false.
+
+```
